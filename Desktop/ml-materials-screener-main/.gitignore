@@ -1,0 +1,32 @@
+# NOTE: .env (with the Materials Project API key) is intentionally committed
+# at the user's request so the repo works out-of-the-box. If this repo is
+# public, regenerate the key at https://materialsproject.org after pushing.
+
+# Large generated data (regenerate with the download + featurize scripts)
+data/
+
+# Trained models (regenerate with the training scripts) — too big for git
+models/
+bandgap_v2/models/
+*.pkl
+
+# Generated figures (regenerate by re-running training scripts)
+plots/
+bandgap_v2/plots/
+
+# Python
+__pycache__/
+*.pyc
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+
+# Logs / OS junk
+*.log
+.DS_Store
+Thumbs.db
+
+# Claude Code local config
+.claude/
+.env
